@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdf5f0; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: red; 
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #d35400;
+}
+
+.bebidas, .doces {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bebidas select, .doces select {
+    flex: 2;
+}
+
+.bebidas input, .doces input {
+    flex: 1;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    background-color: #3576ef;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0c30a8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.lista-section {
+    margin-top: 20px;
+}
+
+#listaPedidos {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#listaPedidos li {
+    background: #fcfcfc;
+    border-left: 5px solid #d35400;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#listaPedidos li strong {
+    color: red;
+}
+
+/* Total */
+#totalPedidos {
+    text-align: right;
+    color: #2c3e50;
+    padding-top: 20px;
+    border-top: 3px double #eee;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    .bebidas, .doces {
+        flex-direction: column;
+    }
+}
